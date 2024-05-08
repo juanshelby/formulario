@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Formulario</title>
 </head>
 <body>
-    
+    <h1 id="title">Formulario</h1>
+    <p id="description">Por favor rellene la información requerida</p>
+    <form id="form" method="envio">
+        <label id="name-label">Nombre<br><input id="name" type="text" placeholder="Escriba su nombre" required /></label>
+        <br><br>
+        <label id="email-label">Email<br><input id="email" type="email" placeholder="Introduzca su email" required /></label>
+         <br><br><label id="number-label"> Edad <br><input id="number" min="16" max="65" type="number" placeholder="Introduzc su edad" required />
+        </label>
+        <p class="answer">¿Qué lenguaje crees que es el mejor para aprender a programar?</p>
+        <select id="dropdown">
+            <option value="Java">Java</option>
+             <option value="Java-Script">Java-Script</option>
+             <option value="Phyton">Phyton</option>
+             <option value="C++">Phyton</option>
+             <option value="Go">Go</option>
+        </select>
+        <p class="answer">¿Qué rama de la informática le gustaría estudiar?</p>
+        <section>
+            <label><input  id="selection0" type="checkbox" value="0" name="front-end" checked/>Front End</label>
+            <br>
+            <label><input  id="selection1" type="checkbox" value="1" name="back-end"/>Back End</label>
+            <br>
+            <label><input  id="selection2" type="checkbox" value="2" name="full-stack"/>Full Stack</label>
+            <br>
+            <label><input  id="selection3"  type="checkbox" value="3" name="network"/>Network</label>
+            <br>
+            <label><input  id="selection4"  type="checkbox" value="4" name="cibersecurity"/>Cibersecurity</label>
+            <br>
+            <label><input  id="selection5"  type="checkbox" value="5" name="artificial intelligence"/>Artificial Intelligence</label>
+           </section>
+           <p class="answer">¿Cree necesario aprender a programar hoy en día?</p>
+           <section>
+            <label><input id="option"  type="radio" value="radio" name="option" checked/>Yes</label>
+            <br>
+            <label><input id="option1"  type="radio" value="radio" name="option"/>No</label>
+            <br>
+            <label><input id="option2"  type="radio" value="radio" name="option"/>I don't no</label>
+           </section>
+           <br>
+           <p class="answer">¿Algún comentario o sugerencia?</p>
+       <textarea id ="bio" rows="3" cols="30" placeholder="Deje su comentario aquí..."></textarea>
+        <br>
+        <br>
+       <input id="submit" type="submit" value="Enviar"/>
+       <br>
+       <br>
+     </form>
 </body>
 </html>
